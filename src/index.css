@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* MAIN CONTENTS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  background: #50a3a2;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 20px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+}
+
+.cta-button {
+  display: block;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #50a3a2;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 18px;
+  margin: 0 auto 0 auto;
+}
+
+button:hover {
+  background-color: #ccf1f0;
+}
+
+/* LOGIN - NAVBAR */
+.view-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
+    margin: 80px auto 0 auto;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.view-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 0;
+    width: auto;
+    gap: 0.25rem;
+    background-color: transparent;
+    font-family: "Roboto Slab", serif;
+    color: white;
+    border: none;
+    padding: 0.875rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.view-button:hover {
+    background-color: #358b8a;
+}
+
+.view-button.active {
+    border-bottom: 2px solid white;
+    font-weight: 600;
+}
+
+/* DASHBOARD - FILE UPLOADER BOX */
+.upload-box {
+  width: 300px;
+  height: 180px;
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.upload-box:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+.upload-box input {
+  display: none; /* hiding actual input that cascades from the input css properties */
+}
+
+.upload-label {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* DASHBOARD - RESULTS CARDS */
+.results-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.result-card {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 150px;
+  backdrop-filter: blur(5px);
+}
+
+.result-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
+.result-value {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+  margin: 0;
+}
